@@ -7,10 +7,7 @@ class servicesController(FlaskView):
     #
     def __init__(self, dict):
         self.s3Service = dict['s3Service']
-
-    @route('/services/hours')
-    def calendarHours(self):
-        hours = [
+        self.hours = [
             '9-9:45',
             '10-10:45',
             '11-11:45',
@@ -28,4 +25,27 @@ class servicesController(FlaskView):
             '23-23:45'
         ]
 
-        return make_response(render_template('includes/hoursList.html', hours=hours), 200) 
+    @route('/services/hours')
+    def calendarHours(self):
+        if (len(self.hours) == 0):
+            self.hours = [
+            '9-9:45',
+            '10-10:45',
+            '11-11:45',
+            '12-12:45',
+            '13-13:45',
+            '14-14:45',
+            '15-15:45',
+            '16-16:45',
+            '17-17:45',
+            '18-18:45',
+            '19-19:45',
+            '20-20:45',
+            '21-21:45',
+            '22-22:45',
+            '23-23:45'
+        ]
+
+        self.hours = self.hours[1:]
+
+        return make_response(render_template('includes/hoursList.html', hours=self.hours), 200) 

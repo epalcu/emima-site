@@ -4,8 +4,30 @@ $(document).on('click', '[id=scheduleButton1]', function(e) {
     getHours($('#divDate1'));
 });
 
+$(document).on('change', '[id=dateTimePicker1input]', function(e) {
+    e.preventDefault();
+
+    console.log("Value changed")
+    
+    getHours($('#divDate1'));
+});
+
+$( "#dateTimePicker1input" ).change(function() {
+    console.log("Value changed")
+    
+    getHours($('#divDate1'));
+  });
+
 $(document).on('click', '[id=scheduleButton2]', function(e) {
     e.preventDefault();
+    
+    getHours($('#divDate2'));
+});
+
+$(document).on('change', '[id=dateTimePicker2input]', function(e) {
+    e.preventDefault();
+
+    console.log("Value changed")
     
     getHours($('#divDate2'));
 });
@@ -18,6 +40,7 @@ const getHours = (divDate) => {
         type: 'GET',
         contentType: 'application/json;charset=UTF-8',
         success: function(hours) {
+            console.log("hours")
             divDate['0']['nextElementSibling']['innerHTML'] = hours;
         }
     });

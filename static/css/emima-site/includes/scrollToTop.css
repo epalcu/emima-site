@@ -1,0 +1,26 @@
+.scroll-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: white;
+  background: lavender;
+  line-height: 45px;
+  z-index: 100;
+}
+
+.scroll-to-top:focus,
+.scroll-to-top:hover {
+  color: white;
+}
+
+.scroll-to-top:hover {
+  background: #9FA4C4;
+}
+
+.scroll-to-top i {
+  font-weight: 800;
+}

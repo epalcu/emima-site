@@ -1,0 +1,74 @@
+#mainNav .navbar-toggler {
+  font-size: 80%;
+  padding: 0.50rem;
+  color: gold;
+  border: 1px solid gold;
+}
+
+.navbar {
+    padding-bottom: 0;
+    padding-top: 0;
+    background: transparent!important;
+}
+
+#mobileNav {
+  display: none;
+}
+
+#desktopNav {
+  display: block;
+}
+
+@media (max-width: 992px) {
+  #mobileNav {
+    display: block;
+  }
+
+  #desktopNav {
+    display: none;
+  }
+
+  .navbar {
+    background: #343a40!important;
+  }
+
+  #navbarLogo {
+    max-height: 60px;
+  max-width: 200px;
+  }
+}
+
+/* .nav-link {
+  border: 1px solid lightgoldenrodyellow;
+} */
+
+.img-responsive {
+  height: auto;
+  width: auto;
+  max-height: 100px;
+  max-width: 250px;
+}
+
+#navbarLogo {
+  border: 1px solid gold;
+  padding: 0;
+}
+
+#navbar-brand {
+  margin: 0;
+  padding: 0;
+}
+
+#menuBtn {
+  display: flex;
+  align-items: center;
+}
+
+#cartBtn {
+    color: lightgoldenrodyellow;
+}
+
+#cartBtn:hover {
+    color: gold;  
+}
+

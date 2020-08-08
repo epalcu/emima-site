@@ -3,7 +3,7 @@
   rel="stylesheet"
 />
 
-<section class="content-section" id="portfolio">
+<section class="content-section" id="services">
   <div class="container">
     <!-- <div class="content-section-heading text-center"> -->
     <!-- <h3 class="text-secondary mb-0">Services</h3> -->
@@ -16,7 +16,8 @@
           class="portfolio-item"
           target="_blank"
           rel="noopener noreferrer"
-          href="#"
+          data-toggle="modal" 
+          data-target="#myModal"
         >
           <span class="caption">
             <span class="caption-content">
@@ -132,3 +133,5 @@
     </div>
   </div>
 </section>
+
+{% include "modals/antiCellulite.html" %}

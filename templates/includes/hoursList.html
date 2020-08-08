@@ -1,0 +1,13 @@
+<div class="container-fluid" style="overflow-x: auto;">
+    <div class="row flex-row flex-nowrap">
+        {% for hour in hours %}
+            <div class="col-2" style="padding-left:0px">
+                <div 
+                    id="card"
+                    class="card" 
+                    style="color:#9FA4C4; text-align:center; cursor:pointer;"
+                >{{hour}}</div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

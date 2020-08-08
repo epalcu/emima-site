@@ -1,8 +1,8 @@
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.50rem;
-  color: gold;
-  border: 1px solid gold;
+  color: #9FA4C4;
+  border: 1px solid #9FA4C4;
 }
 
 .navbar {
@@ -12,7 +12,7 @@
 }
 
 #mobileNav {
-  display: none;
+  display: none; 
 }
 
 #desktopNav {
@@ -34,7 +34,7 @@
 
   #navbarLogo {
     max-height: 60px;
-  max-width: 200px;
+    max-width: 200px;
   }
 }
 
@@ -50,7 +50,7 @@
 }
 
 #navbarLogo {
-  border: 1px solid gold;
+  border: 1px solid #9FA4C4;
   padding: 0;
 }
 
@@ -69,6 +69,6 @@
 }
 
 #cartBtn:hover {
-    color: gold;  
+    color: #9FA4C4;  
 }
 

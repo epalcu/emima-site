@@ -51,13 +51,13 @@
   #mainNav .nav-link {
     transition: none;
     padding: 1rem 1rem;
-    color: lightgoldenrodyellow;
+    color: lavender;
   }
   #mainNav .nav-link:hover {
-    color: gold;
+    color: #9FA4C4;
   }
   #mainNav .nav-link:active {
-    color: gold;
+    color: #9FA4C4;
   }
   #mainNav.navbar-shrink {
     background-color: #fff;
